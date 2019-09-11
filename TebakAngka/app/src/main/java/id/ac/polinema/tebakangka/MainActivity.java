@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
 		random = new Random().nextInt(101);
 	}
 
-//	@Override
-//	protected void onStart() {
-//		super.onStart();
-//		initRandomNumber();
+	@Override
+	protected void onStart() {
+		super.onStart();
+		initRandomNumber();
 //		Toast.makeText(this,"Angka : " + random,Toast.LENGTH_SHORT).show();
-//	}
+	}
 
 	public void handleGuess(View view) {
 		  int tebakan = Integer.parseInt(String.valueOf(input.getText()));
